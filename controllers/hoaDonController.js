@@ -44,15 +44,7 @@ const hoaDonController = {
   },
 
   //DELETE hoaDon
-  deletehoaDon: async (req, res) => {
-    try {
-      await hoaDon.updateMany({ hoaDon: req.params.id }, { hoaDon: null });
-      await hoaDon.findByIdAndDelete(req.params.id);
-      res.status(200).json("Deleted successfully!");
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  },
+  
 };
 
 module.exports = hoaDonController;
