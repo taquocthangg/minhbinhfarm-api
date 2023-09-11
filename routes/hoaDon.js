@@ -11,10 +11,5 @@ router.get("/", hoaDonController.getAllhoaDons);
 //GET AN hoaDon
 router.get("/:id", hoaDonController.getAnhoaDon);
 
-//UPDATE AN hoaDon
-router.put("/:id", hoaDonController.updatehoaDon);
-
-//DELETE hoaDon
-router.delete("/:id", hoaDonController.deletehoaDon);
 
 module.exports = router;
